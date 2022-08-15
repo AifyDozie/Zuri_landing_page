@@ -4,13 +4,10 @@
     box-sizing: border-box;
     font-family: Averta, sans serif;
 }   
-/* main {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    margin: 0;
-} */
+body {
+    font-family: Averta, sans-serif;
+    background-image: linear-gradient(rgb(252, 243, 244), rgb(252, 243, 244), white);
+}
 .upper-division {
  text-align: center;
  background-color: rgb(252, 243, 244);   
@@ -38,71 +35,86 @@ p span {
     color:#dc3545;
     font: 16px Averta, sans-serif;
 }
-/* .buttons {
-    margin-top: 5%;
-    margin-bottom: 20%;
-} */
+.buttons {
+    display:flex;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+
 #button1 {
-    margin-top: 5%;
     margin-bottom: 25%;
-    padding: 10px;
+    background-color:#E7332B;
     margin-right: 15px;
-    background-color:#dc3545;
+    border: 1px solid #E7332B;
+    font-size: 20px; 
+    padding: 0;
+    font-family: Averta, sans-serif;
+}
+#button1 a {
     color: white;
-    border-color: #dc3545;
-    font-size: 20px;
     text-decoration: none;
-    text-decoration-line: none;
+    display: block;
+    padding: 11px 28px;
+    font-family: "Averta", sans-serif;
+}
+#button1 a:hover {
+    color: #E7332B; 
+    background-color:white;
 }
 #button2 {
-    padding: 10px;
-    margin-right: 15px;
+    margin-bottom: 25%; 
     background-color:white;
-    color: #dc3545;
-    border-color: #dc3545;
-    font-size: 20px;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-right: 15px;
+    border: 1px solid #E7332B;
+    font-size: 20px; 
+    padding: 0;
+    font-family: Averta, sans-serif;
 }
+#button2 a {
+    color: #E7332B;
+    text-decoration: none;
+    display: block;
+    padding: 11px 28px;
+    font-family: Averta, sans-serif;
+}
+#button2 a:hover {
+    color: white; 
+    background-color:#E7332B;
+}
+
 #by {
-    margin-top: 3%;
+    padding-top: 15%;
     color:#dc3545;
     text-align: center;
 }
 #cater {
-    font-size: 24px;
-    margin: 1% 35% 8% 35%;
-    padding: 3px;
+    font-size: 23px;
+    margin: 1% 15% 8% 15%;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
 }
 .form-container {
     display: flex;
     background-color: white;
     justify-content: space-around;
-    /* width: auto; */
     flex-direction: row;
-    margin-right: 60px; 
-    margin-left: 60px;
+    margin-right: 40px; 
+    margin-left: 40px;
 }
 .form-container > div {
     background-color: rgb(252, 243, 244);
-    /* margin-top:35px;
-    margin-bottom: 10px; */
     margin-right: 15px; 
     margin-left: 15px;
     padding-top: 10px;
     padding-left: 25px;
     padding-bottom: 15px;
     padding-right: 30px;
-    /* font-size: 30px; */
-    /* justify-content: space-around; */
     width: calc(100% / 3);
 }
 h5 {
     margin-top: 40px;
-    /* margin-left:15px; */
     margin-right: 200px;
     margin-bottom: 40px;
     background-color: white;
@@ -111,7 +123,6 @@ h5 {
     padding-bottom: 40px;
     padding-left: 5px;
     font-size: 18px;
-    /* line-height: 30px; */
 }
 .words {
     line-height: 30px;
@@ -132,20 +143,79 @@ h5 {
     margin-left: 5px;
 }
 .last > div {
-    /* padding: 5%; */
     line-height: 30px;
-    word-spacing: 10px;
+    word-spacing: 5px;
 }
 .reds {
     color: #dc3545;
     
 }
 #jubilee {
-    padding-right: 15%;
+    
+    align-items: center;
 }
 .end {
     margin-top:5%;
     margin-bottom: 10%;
     text-align: center;
+}
+
+styling for new.html
+.topnav {
+    position: fixed;
+    list-style-type: none;
+    position: fixed;
+    top: 0%;
+    list-style-type: none;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0;
+}
+.topnav img {
+    float: left;
+    margin: 2%;
+    margin-bottom: 30px;
+}
+.topnav-right {
+    float: right;
+    /* margin: 10%; */
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+    margin-bottom: 30px;
+}
+#ab {
+    padding-right: 5%;
+}
+/* .upper1 {
+    margin-top: 35%;
+    display: flex;
+    flex-direction: row;
+} */
+@media screen and (max-width: 500px) {
+    .buttons {
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #button1 {
+        margin-bottom: 30px;
+        margin-left: 8%;
+        margin-right: 10%;
+    }
+    .form-container {
+        display: block;
+        margin-bottom: 10%;
+    }
+    .form-container > div {
+        margin-bottom: 10%;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;        
+    }
+    .last {
+        display: block;
+        text-align: center;
+    }
 
 }
